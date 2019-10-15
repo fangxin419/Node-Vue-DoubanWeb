@@ -1,4 +1,4 @@
-# node-vueÏîÄ¿
+# node-vue
 
 ## Project setup
 ```
