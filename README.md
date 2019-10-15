@@ -1,4 +1,4 @@
-# node-vue
+# vueobj
 
 ## Project setup
 ```

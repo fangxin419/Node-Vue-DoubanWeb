@@ -21,7 +21,7 @@ module.exports = {
     
     // open: process.platform === 'darwin',
     // host: '127.0.0.1',
-    port: 8001,
+    port: 8080,
     open: true,
     // headers:{
     //   'Access-Control-Allow-Origin': '*',

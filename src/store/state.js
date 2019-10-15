@@ -1,6 +1,19 @@
 export default {
-  user: {
-    err: 1,
-    msg: '未登录'
-  }
+  
+  bLoading: false,
+  bNav: false,
+  bFoot: false,
+
+  home: [],
+  follow: [],
+  column: [],
+  banner: [],
+
+  user:{
+    err:1,
+    msg:'未登录'
+  },
+
+  detail: {}
+
 }
