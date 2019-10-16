@@ -3,7 +3,7 @@
     <swipe class="my-swipe" :speed="1000">
       <swipe-item :class="'slide'+(index+1)" v-for="(item,index) of banner" :key="item._id">
         <router-link :to="{name:'Detail',query:{dataName,id:item._id}}">
-          <img :src="require('../assets/img/banner/banner'+(index*1+1)+'.png')" />
+          <img :src="server.baseUrl + item.image_lmobile" />
         </router-link>
       </swipe-item>
     </swipe>
