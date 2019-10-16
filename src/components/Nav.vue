@@ -58,11 +58,9 @@ export default {
     },
     openbox() {
       this.isShow = true;
-      // console.log(this.isShow);
     },
     clo(val) {
       this.isShow = val;
-      // console.log("val"+val);
     }
   }
 };

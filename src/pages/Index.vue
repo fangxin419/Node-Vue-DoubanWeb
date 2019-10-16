@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <Slider :banner="$store.state.banner"></Slider>
+    <Slider :banner="$store.state.banner" :data-name="'banner'"></Slider>
     <div class="rootbox">
       <div v-if="$store.state.user.err==1">
         <router-link to="/login">登录豆瓣</router-link>
@@ -21,10 +21,12 @@ export default {
   //   };
   // },
   components: {
-    List,Slider
+    List,
+    Slider
   },
   activated() {
     this.$store.dispatch("UPDATE_HOME");
+    this.$store.dispatch("UPDATE_BANNER");
   }
   // mounted() {
   //   this.$axios({

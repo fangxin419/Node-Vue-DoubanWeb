@@ -23,25 +23,25 @@
       <ul>
         <li class="gk-text">
           <i></i>
-          <p>公开博文</p>
+          <p>电影记录</p>
           <b></b>
           <span>0</span>
         </li>
         <li class="mm-text">
           <i></i>
-          <p>秘密博文</p>
+          <p>图书记录</p>
           <b></b>
           <span>0</span>
         </li>
         <li class="cg-text">
           <i></i>
-          <p>草稿箱</p>
+          <p>发布动态</p>
           <b></b>
           <span>0</span>
         </li>
         <li class="sc-text">
           <i></i>
-          <p>收藏夹</p>
+          <p>草稿箱</p>
           <b></b>
           <span>0</span>
         </li>
