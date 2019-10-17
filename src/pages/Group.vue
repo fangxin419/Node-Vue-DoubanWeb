@@ -3,9 +3,9 @@
         <div>
             <Nav></Nav>
         </div>
-        <Xiaozu :xiaozu="xiaozua" bigtitle="租房找室友" moretitle="更多房源"></Xiaozu>
-        <Xiaozu :xiaozu="xiaozub" bigtitle="来聊5块钱" moretitle="更多话题"></Xiaozu>
-        <Xiaozu :xiaozu="xiaozuc" bigtitle="疯狂买买买" moretitle="更多小可爱"></Xiaozu>
+        <XiaoZu :xiaozu="xiaozua" bigtitle="租房找室友" moretitle="更多房源"></XiaoZu>
+        <XiaoZu :xiaozu="xiaozub" bigtitle="来聊5块钱" moretitle="更多话题"></XiaoZu>
+        <XiaoZu :xiaozu="xiaozuc" bigtitle="疯狂买买买" moretitle="更多小可爱"></XiaoZu>
         <div class="footer">
             <Footer></Footer>
         </div>
@@ -31,7 +31,7 @@ export default {
         Footer
     },
     created() {
-        this.axios({
+        this.$axios({
             url:'/xiaozu',
             method:"get"
         }).then(data=>{

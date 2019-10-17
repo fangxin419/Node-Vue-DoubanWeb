@@ -1,51 +1,53 @@
 <template>
+  <div class="book">
+    <Nav></Nav>
     <div>
-        <Nav></Nav>
-        <div>
-            <PicAndtext class="bookbox" req_type="book" title="最受关注类书|虚构类" min="1" max="10"></PicAndtext>
-            <PicAndtext class="bookbox" req_type="book" title="最受关注类书|非虚构类" min="11" max="20">
-            </PicAndtext>
-        </div>
-        <div class="wenzibox">
-            <Wenzibox wenzitype="book"></Wenzibox>
-        </div>
-        <div class="fenlei">
-            <Feilei></Feilei>
-        </div>
-        <div class="footer">
-            <Footer></Footer>
-        </div>
-        
+      <PicAndText class="bookbox" req_type="book" title="推荐书籍" min="0" max="6"></PicAndText>
+      <PicAndText class="bookbox" req_type="book" title="最受关注" min="6" max="11"></PicAndText>
+      <PicAndText class="bookbox" req_type="book" title="销量最高" min="11" max="16"></PicAndText>
+      <PicAndText class="bookbox" req_type="book" title="最受欢迎" min="16" max="21"></PicAndText>
     </div>
+    <div class="findbox">
+      <FindBox findtype="book"></FindBox>
+    </div>
+    <div class="fenlei">
+      <FenLei></FenLei>
+    </div>
+    <div class="footer">
+      <Footer></Footer>
+    </div>
+  </div>
 </template>
 
 <script>
 import Nav from "../components/Nav";
-import PicAndtext from "../components/PicAndtext";
-import WenZibox from "../components/WenZiBox";
+import PicAndText from "../components/PicAndText";
+import FindBox from "../components/FindBox";
 import Footer from "../components/Footer";
-import Feilei from "../components/Feilei";
-
+import FenLei from "../components/FenLei";
 
 export default {
-    components:{
-        Nav,
-        PicAndtext,
-        WenZibox,
-        Footer,
-        Feilei
-    }
-}
+  components: {
+    Nav,
+    PicAndText,
+    FindBox,
+    Footer,
+    FenLei
+  }
+};
 </script>
 
 <style scoped>
-.bookbox{
-    margin-top: 0.15rem;
+.book{
+  padding:.2rem;
 }
-.wenzibox{
-    margin-top: 0.2rem;
+.bookbox {
+  margin-top: .2rem;
 }
-.fenlei{
-    margin-top: 0.3rem;
+.findbox {
+  margin-top: .4rem;
+}
+.fenlei {
+  margin-top: .3rem;
 }
 </style>

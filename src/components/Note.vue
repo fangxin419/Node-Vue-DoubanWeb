@@ -33,7 +33,7 @@ export default {
         };
     },
     created() {
-        this.axios({
+        this.$axios({
         url: "/note",
         method: "get"
         }).then(data => {

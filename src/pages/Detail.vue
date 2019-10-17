@@ -9,8 +9,8 @@
     <div>
       <Down></Down>
     </div>
-    <div v-show="dataName=='home'" class="neirong">
-      <ul>
+    <div v-show="data" class="neirong">
+      <ul v-if="!$store.state.bLoading && dataName=='home'">
         <li class="imgs">
           <img :src="data.image_hlarge" />
         </li>
@@ -20,9 +20,8 @@
         <li>活动简介:</li>
         <li class="content" v-html="data.content"></li>
       </ul>
-    </div>
-    <div v-show="dataName=='banner'" class="neirong">
-      <ul>
+
+      <ul v-if="!$store.state.bLoading && dataName=='banner'">
         <li class="title" v-html="data.title"></li>
         <li class="content" v-html="data.content"></li>
       </ul>
@@ -59,13 +58,16 @@ export default {
     this.$axios({
       url: `/user/${this.dataName}/${this.id}`
     }).then(res => (this.data = res.data.data.detail));
+  },
+  deactivated() {
+    this.data = {};
   }
 };
 </script>
 
 <style scoped>
 .nav {
-  height: .8rem;
+  height: 0.8rem;
 }
 .db_login_top {
   position: fixed;
@@ -89,42 +91,42 @@ export default {
   font-weight: normal;
 }
 
-.db_login_top .category{
-  font-size:20px;
+.db_login_top .category {
+  font-size: 20px;
   color: #42bd56;
 }
 
 .neirong {
-  padding: .2rem;
-  margin-top: .4rem;
+  padding: 0.2rem;
+  margin-top: 0.4rem;
   margin-bottom: 1rem;
 }
 
 .neirong ul > li {
-  margin: .1rem 0;
+  margin: 0.1rem 0;
 }
 
-.neirong .title{
-  font:700 .3rem/2 "";
+.neirong .title {
+  font: 700 0.3rem/2 "";
 }
 
 .content,
 .address {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   text-indent: 2em;
-  font-size: .28rem;
+  font-size: 0.28rem;
 }
 
 .data {
-  margin-bottom: .6rem;
-  font-size: .24rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.24rem;
   color: green;
 }
 .imgs {
   width: 100%;
   text-align: center;
-  margin-top: .4rem;
-  margin-bottom: .4rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 .imgs img {
   width: 100%;

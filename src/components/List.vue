@@ -3,7 +3,7 @@
     <p class="title">豆瓣热点:</p>
     <div class="smallbox" v-for="(item,index) in listData" :key="index">
       <router-link :to="{name:'Detail',query:{dataName,id:item._id}}">
-        <div class="wenzi">
+        <div class="find">
           <p class="p1">{{item.title}}</p>
           <p class="p2">{{item.title}}</p>
         </div>
@@ -29,7 +29,7 @@ export default {
   margin-top: 0.6rem;
   font: 700 0.4rem/1.5 "";
 }
-.wenzi {
+.find {
   width: 70%;
   height: 100%;
   float: left;

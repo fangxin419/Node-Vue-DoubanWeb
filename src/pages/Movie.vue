@@ -1,14 +1,14 @@
 <template>
-    <div>
+    <div class="movie">
         <Nav></Nav>
         <div class="tuwenbox">
-            <PicAndtext req_type="movie" title="影院热映" min="1" max="10" ></PicAndtext>
-            <PicAndtext req_type="movie" title="免费在线观影" min="11" max="20" ></PicAndtext>
-            <PicAndtext req_type="movie" title="新片速递" min="21" max="30" ></PicAndtext>
-            <PicAndtext req_type="movie" title="发现好电影" min="31" max="40" ></PicAndtext>
+            <PicAndText req_type="movie" title="影院热映" min="0" max="6"></PicAndText>
+            <PicAndText req_type="movie" title="喜剧动画" min="6" max="11"></PicAndText>
+            <PicAndText req_type="movie" title="发现好电影" min="11" max="16"></PicAndText>
+            <PicAndText req_type="movie" title="新片速递" min="16" max="21"></PicAndText>
         </div>
-        <div class="wenzibox">
-            <Wenzibox wenzitype="movie"></Wenzibox>
+        <div class="findbox">
+            <FindBox findtype="movie"></FindBox>
         </div>
         <div class="footer">
             <Footer></Footer>
@@ -19,32 +19,34 @@
 <script>
 
 import Nav from "../components/Nav";
-import PicAndtext from "../components/PicAndtext";
-import WenZiBox from "../components/WenZiBox";
+import PicAndText from "../components/PicAndText";
+import FindBox from "../components/FindBox";
 import Footer from "../components/Footer";
 
 export default {
     components:{
         Nav,
-        PicAndtext,
-        WenZiBox,
+        PicAndText,
+        FindBox,
         Footer
     }
 }
 </script>
 
 <style scoped>
+.movie{
+  padding:.2rem;
+}
 .tuwenbox{
-    margin-top: 0.2rem;
-    padding: 0 0.2rem;
+    margin-top: .2rem;
 }
 .tuwenbox>div{
-    margin-bottom: 0.2rem;
+    margin-bottom: .2rem;
 }
-.wenzibox{
-    margin-top: 0.2rem;
+.findbox{
+    margin-top: .4rem;
 }
 .footer{
-    margin-top: 0.3rem;
+    margin-top: .3rem;
 }
 </style>

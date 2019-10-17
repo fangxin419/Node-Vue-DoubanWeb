@@ -68,7 +68,7 @@ export default {
 
 <style scoped>
 .navbox2{
-  height: 0.8rem;
+  height: 1rem;
 }
 .navbox1 {
   font-size:.28rem;

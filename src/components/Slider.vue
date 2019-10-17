@@ -1,46 +1,33 @@
 <template>
   <div class="banner">
-    <swipe class="my-swipe" :speed="1000">
-      <swipe-item :class="'slide'+(index+1)" v-for="(item,index) of banner" :key="item._id">
+    <van-swipe :autoplay="3000" indicator-color="white" v-show="banner">
+      <van-swipe-item v-for="(item,index) of banner" :key="index">
         <router-link :to="{name:'Detail',query:{dataName,id:item._id}}">
           <img :src="server.baseUrl + item.image_lmobile" />
         </router-link>
-      </swipe-item>
-    </swipe>
+      </van-swipe-item>
+    </van-swipe>
   </div>
 </template>
 <script>
-import "vue-swipe/dist/vue-swipe.css";
-import { Swipe, SwipeItem } from "vue-swipe";
 export default {
-  props: ["banner","dataName"],
-  components: {
-    swipe: Swipe,
-    "swipe-item": SwipeItem
-  }
+  props: ["banner", "dataName"]
 };
 </script>
 
-<style scoped>
-.my-swipe {
+<style>
+.van-swipe__track {
   margin-top: 10px;
-  height: 200px;
-  text-align: center;
-}
-
-.slide1 {
+  width: 100%;
   height: 200px;
 }
 
-.slide2 {
-  height: 200px;
+.van-swipe__track .van-swipe-item {
+  width: 100%;
+  height: 100%;
 }
 
-.slide3 {
-  height: 200px;
-}
-
-.my-swipe img {
+.van-swipe__track .van-swipe-item img {
   width: 100%;
   height: 100%;
 }

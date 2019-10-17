@@ -5,8 +5,14 @@ import router from './plugins/router'; //导入路由配置
 //引入公样式
 import './assets/css/base.css';
 import './assets/js/font';
-
 import './plugins/axios';
+
+import {
+  Swipe,
+  SwipeItem,
+  Rate
+} from 'vant';
+Vue.use(Swipe).use(SwipeItem).use(Rate);
 
 //配置服务器地址
 Vue.prototype.server = require('./config/server');

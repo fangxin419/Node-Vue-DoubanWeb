@@ -6,7 +6,7 @@
         </div>
         <ul>
             <li v-for="(v,i) in getData" :key="i">
-                <div class="wenzibox">
+                <div class="findbox">
                     <p :style="{color:v.color}" class="p1">{{v.title}}</p>
                     <p :style="{color:v.scolor}" class="p2">{{v.concont}}</p>
                 </div>
@@ -30,7 +30,7 @@ export default {
         }
     },
     created () {
-        // this.axios({
+        // this.$axios({
         //     url:"/type",
         //     method:"get"
         // }).then(
@@ -76,16 +76,16 @@ li>div{
     margin-left: 0.1rem;
     color: green;
 }
-.wenzibox{
+.findbox{
     height: 0.8rem;
 }
-.wenzibox>p{
+.findbox>p{
     text-align: center;
 }
-.wenzibox>p:nth-child(1){
+.findbox>p:nth-child(1){
     font-size: 0.22rem;
 }
-.wenzibox>p:nth-child(2){
+.findbox>p:nth-child(2){
     font-size: 0.14rem;
     line-height: 0.16rem;
 }
