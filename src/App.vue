@@ -27,7 +27,7 @@ export default {
   methods: {
     checkPath(path) {
       //路由检测
-      if (/index|follow|column/.test(path)) {
+      if (/index|follow|column|book|movie|broadcast/.test(path)) {
         this.$store.dispatch(VIEW_NAV, true);
         this.$store.dispatch(VIEW_FOOT, true);
       }
@@ -35,7 +35,7 @@ export default {
         this.$store.dispatch(VIEW_NAV, false);
         this.$store.dispatch(VIEW_FOOT, true);
       }
-      if (/login|reg|detail/.test(path)) {
+      if (/login|reg|detail|search/.test(path)) {
         this.$store.dispatch(VIEW_NAV, false);
         this.$store.dispatch(VIEW_FOOT, false);
       }

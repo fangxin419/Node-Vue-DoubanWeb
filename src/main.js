@@ -8,11 +8,12 @@ import './assets/js/font';
 import './plugins/axios';
 
 import {
+  Search,
   Swipe,
   SwipeItem,
   Rate
 } from 'vant';
-Vue.use(Swipe).use(SwipeItem).use(Rate);
+Vue.use(Swipe).use(SwipeItem).use(Rate).use(Search);
 
 //配置服务器地址
 Vue.prototype.server = require('./config/server');

@@ -15,11 +15,6 @@
 import Slider from "../components/Slider";
 import List from "../components/List";
 export default {
-  // data() {
-  //   return {
-  //     listData: []
-  //   };
-  // },
   components: {
     List,
     Slider
@@ -28,12 +23,6 @@ export default {
     this.$store.dispatch("UPDATE_HOME");
     this.$store.dispatch("UPDATE_BANNER");
   }
-  // mounted() {
-  //   this.$axios({
-  //     url: "/user/home",
-  //     params: { _page: 1, _limit: 10 }
-  //   }).then(res => (this.listData = res.data.data));
-  // }
 };
 </script>
 

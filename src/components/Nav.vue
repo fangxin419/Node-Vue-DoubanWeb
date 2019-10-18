@@ -6,61 +6,33 @@
         <img src="../assets/logo.png" @click="goIndex()" />
       </div>
       <div class="abox">
-        <router-link to="./movie">
+        <router-link to="/movie">
           <span class="movie">电影</span>
         </router-link>
-        <router-link to="./book">
+        <router-link to="/book">
           <span class="book">图书</span>
         </router-link>
-        <router-link to="./broadcast">
+        <router-link to="/shop">
+          <span class="shop">商城</span>
+        </router-link>
+        <router-link to="/broadcast">
           <span class="broadcast">广播</span>
         </router-link>
-        <router-link to="./group">
-          <span class="group">小组</span>
+      </div>
+      <div class="search">
+        <router-link to="/search">
+          <img src="../assets/search.png" />
         </router-link>
-      </div>
-      <div class="search" @click="openbox()">
-        <img src="../assets/search.png" />
-      </div>
-    </div>
-
-    <!-- 搜索 -->
-    <div class="searchbox" v-show="isShow">
-      <div>
-        <Search @close1="clo"></Search>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Search from "../components/Search";
-
-import Router from "vue-router";
-
-const originalPush = Router.prototype.push;
-Router.prototype.push = function push(location) {
-  return originalPush.call(this, location).catch(err => err);
-};
-
 export default {
-  components: {
-    Search
-  },
-  data() {
-    return {
-      isShow: false
-    };
-  },
   methods: {
     goIndex() {
       this.$router.push("/index");
-    },
-    openbox() {
-      this.isShow = true;
-    },
-    clo(val) {
-      this.isShow = val;
     }
   }
 };
@@ -115,21 +87,16 @@ export default {
   width: 50%;
 }
 .search {
-  display: flex;
-  align-items: center;
+  width: .6rem;
+  height:.6rem;
+  position: absolute;
   top:0;
   bottom:0;
-  margin:auto;
+  right:20px;
+  margin:auto 0;
 }
-.search > img {
+.search img {
   width: .6rem;
-}
-.searchbox {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  background-color: white;
 }
 .navbox1 {
   display: flex;

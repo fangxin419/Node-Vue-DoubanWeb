@@ -58,7 +58,6 @@
 import store from "../plugins/store.js";
 export default {
   beforeRouteEnter(to, from, next) {
-    // store.state.$store.state.user.data.err==0 ? next(_this=>_this.user=store.state.user) : next('/login')
     store.state.user.err == 0 ? next() : next("/login");
   },
   methods: {

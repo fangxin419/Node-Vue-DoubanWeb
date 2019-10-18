@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Index from '../pages/Index'
+import Search from '../pages/Search'
 import Book from '../pages/Book'
-import Broadcast from '../pages/Broadcast'
-import Group from '../pages/Group'
+import BroadCast from '../pages/BroadCast'
 import Movie from '../pages/Movie'
 import Login from '../pages/Login'
 import Reg from '../pages/Reg'
@@ -21,20 +21,20 @@ export default new Router({
       component: Index
     },
     {
+      path: '/search',
+      name: 'Search',
+      component: Search
+    },
+    {
       path: '/broadcast',
-      name: 'Broadcast',
-      component: Broadcast
+      name: 'BroadCast',
+      component: BroadCast
     },
     {
       path: '/book',
       name: 'Book',
       component: Book
     }, 
-    {
-      path: '/group',
-      name: 'Group',
-      component: Group
-    },
     {
       path: '/movie',
       name: 'Movie',

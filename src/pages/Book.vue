@@ -1,6 +1,5 @@
 <template>
   <div class="book">
-    <Nav></Nav>
     <div>
       <PicAndText class="bookbox" req_type="book" title="推荐书籍" min="0" max="6"></PicAndText>
       <PicAndText class="bookbox" req_type="book" title="最受关注" min="6" max="11"></PicAndText>
@@ -38,16 +37,16 @@ export default {
 </script>
 
 <style scoped>
-.book{
-  padding:.2rem;
+.book {
+  padding: 0.2rem;
 }
 .bookbox {
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 .findbox {
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 .fenlei {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 </style>
