@@ -1,6 +1,6 @@
 <template>
   <div class="newsList">
-    <p class="title">豆瓣热点:</p>
+    <h3 class="title">豆瓣热点:</h3>
     <div class="smallbox" v-for="(item,index) in listData" :key="index">
       <router-link :to="{name:'Detail',query:{dataName,id:item._id}}">
         <div class="find">
@@ -25,9 +25,8 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  margin-top: 0.6rem;
-  font: 700 0.4rem/1.5 "";
+h3.title {
+  margin-top: .6rem;
 }
 .find {
   width: 70%;
@@ -48,26 +47,26 @@ export default {
   width: 100%;
   height: 2.4rem;
   border-bottom: 1px solid #aaaaaa;
-  margin-bottom: 0.1rem;
-  padding: 0.6rem 0;
+  margin-bottom: .1rem;
+  padding: .6rem 0;
 }
 .p1 {
-  font-size: 0.28rem;
-  margin-bottom: 0.4rem;
+  font-size: .28rem;
+  margin-bottom: .4rem;
 }
 .p2 {
-  font-size: 0.24rem;
+  font-size: .24rem;
   color: #aaaaaa;
 }
 .time {
   float: left;
   color: burlywood;
-  font-size: 0.28rem;
+  font-size: .28rem;
 }
 .category_name {
   float: right;
-  margin-right: 0.2rem;
+  margin-right: .2rem;
   color: rgb(11, 78, 165);
-  font-size: 0.28rem;
+  font-size: .28rem;
 }
 </style>

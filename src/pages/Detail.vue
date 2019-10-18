@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 .nav {
-  height: 0.8rem;
+  height: .8rem;
 }
 .db_login_top {
   position: fixed;
@@ -97,36 +97,36 @@ export default {
 }
 
 .neirong {
-  padding: 0.2rem;
-  margin-top: 0.4rem;
+  padding: .2rem;
+  margin-top: .4rem;
   margin-bottom: 1rem;
 }
 
 .neirong ul > li {
-  margin: 0.1rem 0;
+  margin: .1rem 0;
 }
 
 .neirong .title {
-  font: 700 0.3rem/2 "";
+  font: 700 .3rem/2 "";
 }
 
 .content,
 .address {
-  margin-bottom: 0.6rem;
+  margin-bottom: .6rem;
   text-indent: 2em;
-  font-size: 0.28rem;
+  font-size: .28rem;
 }
 
 .data {
-  margin-bottom: 0.6rem;
-  font-size: 0.24rem;
+  margin-bottom: .6rem;
+  font-size: .24rem;
   color: green;
 }
 .imgs {
   width: 100%;
   text-align: center;
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
+  margin-top: .4rem;
+  margin-bottom: .4rem;
 }
 .imgs img {
   width: 100%;

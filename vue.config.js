@@ -20,7 +20,8 @@ module.exports = {
   devServer: {
     
     // open: process.platform === 'darwin',
-    // host: '127.0.0.1',
+    // host: '0.0.0.0',
+    // disableHostCheck: true,
     port: 8080,
     open: true,
     // headers:{

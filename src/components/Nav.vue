@@ -72,13 +72,13 @@ export default {
 }
 .navbox1 {
   font-size:.28rem;
-  height: 0.8rem;
+  height: .8rem;
   width: 100%;
-  line-height: 0.8rem;
+  line-height: .8rem;
   position: fixed;
   background-color: white;
   top: 0;
-  padding: 0.12rem 0;
+  padding: .12rem 0;
   border-bottom: 1px solid #aaaaaa;
   z-index: 999;
 }
@@ -99,7 +99,7 @@ export default {
 }
 .abox > a {
   text-decoration: none;
-  margin: 0 0.1rem;
+  margin: 0 .1rem;
 }
 .logobox {
   height: 100%;
@@ -107,8 +107,8 @@ export default {
   line-height: 100%;
 }
 .logobox > img {
-  width: 0.8rem;
-  margin-left: 0.2rem;
+  width: .8rem;
+  margin-left: .2rem;
 }
 .abox {
   float: left;
@@ -122,7 +122,7 @@ export default {
   margin:auto;
 }
 .search > img {
-  width: 0.6rem;
+  width: .6rem;
 }
 .searchbox {
   width: 100%;

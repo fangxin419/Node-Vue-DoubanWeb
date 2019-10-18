@@ -19,11 +19,11 @@
 <style scoped>
 .foot {
   width: 100%;
-  height: 0.62rem;
+  height: .62rem;
 }
 .foot-btn {
   width: 100%;
-  height: 0.8rem;
+  height: .8rem;
   background: #fff;
   position: fixed;
   left: 0;
@@ -43,11 +43,11 @@
   height: 100%;
 }
 .foot-btn ul .index {
-  width: 0.44rem;
-  height: 0.59rem;
+  width: .44rem;
+  height: .59rem;
   background: url(../assets/img/home1.png) no-repeat 0 0;
   background-size: 100%;
-  margin-top: 0.1rem;
+  margin-top: .1rem;
 }
 .foot-btn ul .write {
   width: .9rem;
@@ -57,12 +57,12 @@
   margin:-.1rem 0 0 1.18rem;
 }
 .foot-btn ul .users {
-  width: 0.39rem;
-  height: 0.63rem;
+  width: .39rem;
+  height: .63rem;
   background: url(../assets/img/my.png) no-repeat 0 0;
   background-size: 100%;
   margin-left: 1rem;
-  margin-top: 0.07rem;
+  margin-top: .07rem;
 }
 .foot-btn ul .index-active {
   background: url(../assets/img/home.png) no-repeat 0 0;

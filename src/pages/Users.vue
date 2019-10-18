@@ -85,13 +85,13 @@ export default {
 <style scoped>
 .content {
   max-width: 6rem;
-  margin: 0.2rem auto;
+  margin: .2rem auto;
 }
 .content .header {
   width: 6rem;
   height: 3rem;
   background: #9e9a95;
-  padding-top: 0.4rem;
+  padding-top: .4rem;
 }
 .header h2 {
   width: 1.02rem;
@@ -104,10 +104,10 @@ export default {
 }
 .header .user-box {
   width: 2rem;
-  font-size: 0.26rem;
+  font-size: .26rem;
   color: #fff;
   margin: 0 auto;
-  margin-top: 0.2rem;
+  margin-top: .2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -115,26 +115,26 @@ export default {
   color: #fff;
 }
 .header ul {
-  margin-top: 0.4rem;
+  margin-top: .4rem;
 }
 .header ul li {
   width: 50%;
-  height: 0.7rem;
+  height: .7rem;
   float: left;
   color: #fff;
 }
 .header ul li span {
-  height: 0.37rem;
-  line-height: 0.37rem;
+  height: .37rem;
+  line-height: .37rem;
   text-align: center;
   display: block;
-  font-size: 0.25rem;
+  font-size: .25rem;
 }
 .header ul li p {
   text-align: center;
-  font-size: 0.3rem;
-  height: 0.32rem;
-  line-height: 0.32rem;
+  font-size: .3rem;
+  height: .32rem;
+  line-height: .32rem;
   border-right: 1px solid #fff;
 }
 .header ul li p.end {
@@ -143,108 +143,108 @@ export default {
 .content .docList {
   width: 6rem;
   margin: 0 auto;
-  margin-top: 0.32rem;
+  margin-top: .32rem;
 }
 .docList ul {
   border-top: 1px solid #7b7c7c;
 }
 .docList ul li {
   background: #fff;
-  height: 0.79rem;
+  height: .79rem;
   border-top: 1px solid #bcbbba;
   border-bottom: 1px solid #7b7c7c;
 }
 .docList ul li span {
   float: right;
-  margin-right: 0.14rem;
-  margin-top: 0.26rem;
+  margin-right: .14rem;
+  margin-top: .26rem;
 }
 .docList ul li b {
-  width: 0.21rem;
-  height: 0.24rem;
+  width: .21rem;
+  height: .24rem;
   background: url(../assets/img/next_img.png) no-repeat 0 0;
   background-size: 100%;
   float: right;
-  margin-right: 0.34rem;
-  margin-top: 0.28rem;
+  margin-right: .34rem;
+  margin-top: .28rem;
 }
 
 .docList ul .gk-text i {
-  width: 0.37rem;
-  height: 0.37rem;
+  width: .37rem;
+  height: .37rem;
   background: url(../assets/img/gk_text.png) no-repeat 0 0;
   background-size: 100%;
   float: left;
-  margin-left: 0.29rem;
-  margin-top: 0.24rem;
+  margin-left: .29rem;
+  margin-top: .24rem;
 }
 .gk-text p {
   float: left;
-  font-size: 0.25rem;
-  margin-left: 0.29rem;
-  margin-top: 0.25rem;
+  font-size: .25rem;
+  margin-left: .29rem;
+  margin-top: .25rem;
 }
 .docList ul .mm-text i {
-  width: 0.29rem;
-  height: 0.35rem;
+  width: .29rem;
+  height: .35rem;
   background: url(../assets/img/mm_text.png) no-repeat 0 0;
   background-size: 100%;
   float: left;
-  margin-left: 0.32rem;
-  margin-top: 0.24rem;
+  margin-left: .32rem;
+  margin-top: .24rem;
 }
 .mm-text p {
   float: left;
-  font-size: 0.25rem;
-  margin-left: 0.35rem;
-  margin-top: 0.25rem;
+  font-size: .25rem;
+  margin-left: .35rem;
+  margin-top: .25rem;
 }
 .docList ul .cg-text i {
-  width: 0.37rem;
-  height: 0.37rem;
+  width: .37rem;
+  height: .37rem;
   background: url(../assets/img/cg_text.png) no-repeat 0 0;
   background-size: 100%;
   float: left;
-  margin-left: 0.29rem;
-  margin-top: 0.24rem;
+  margin-left: .29rem;
+  margin-top: .24rem;
 }
 .cg-text p {
   float: left;
-  font-size: 0.25rem;
-  margin-left: 0.29rem;
-  margin-top: 0.25rem;
+  font-size: .25rem;
+  margin-left: .29rem;
+  margin-top: .25rem;
 }
 .docList ul .sc-text i {
-  width: 0.37rem;
-  height: 0.37rem;
+  width: .37rem;
+  height: .37rem;
   background: url(../assets/img/sc_text.png) no-repeat 0 0;
   background-size: 100%;
   float: left;
-  margin-left: 0.29rem;
-  margin-top: 0.24rem;
+  margin-left: .29rem;
+  margin-top: .24rem;
 }
 .sc-text p {
   float: left;
-  font-size: 0.25rem;
-  margin-left: 0.29rem;
-  margin-top: 0.25rem;
+  font-size: .25rem;
+  margin-left: .29rem;
+  margin-top: .25rem;
 }
 .docList ul .my_cz {
-  margin-top: 0.45rem;
+  margin-top: .45rem;
 }
 .docList ul .my_cz i {
-  width: 0.37rem;
-  height: 0.37rem;
+  width: .37rem;
+  height: .37rem;
   background: url(../assets/img/my_cz.png) no-repeat 0 0;
   background-size: 100%;
   float: left;
-  margin-left: 0.29rem;
-  margin-top: 0.24rem;
+  margin-left: .29rem;
+  margin-top: .24rem;
 }
 .my_cz p {
   float: left;
-  font-size: 0.25rem;
-  margin-left: 0.29rem;
-  margin-top: 0.25rem;
+  font-size: .25rem;
+  margin-left: .29rem;
+  margin-top: .25rem;
 }
 </style>

@@ -48,7 +48,7 @@ ul{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 0.2rem;
+    margin-top: .2rem;
 }
 li{
     width: 1rem;
@@ -58,35 +58,35 @@ li>div{
     width: 1rem;
 }
 .headerbox{
-    margin-top: 0.1rem;
+    margin-top: .1rem;
     width: 100%;
-    padding-bottom: 0.06rem;
+    padding-bottom: .06rem;
     border-bottom: 1px solid #e9e3e3;
 }
 .sousuokuang{
     width:70%;
-    height: 0.26rem; 
+    height: .26rem; 
     background-image: url("../assets/sousu.png");
     background-repeat: no-repeat;
     background-position:center 0;
-    background-size: 0.26rem;
-    margin-left: 0.2rem;
+    background-size: .26rem;
+    margin-left: .2rem;
 }
 .headerbox span{
-    margin-left: 0.1rem;
+    margin-left: .1rem;
     color: green;
 }
 .findbox{
-    height: 0.8rem;
+    height: .8rem;
 }
 .findbox>p{
     text-align: center;
 }
 .findbox>p:nth-child(1){
-    font-size: 0.22rem;
+    font-size: .22rem;
 }
 .findbox>p:nth-child(2){
-    font-size: 0.14rem;
-    line-height: 0.16rem;
+    font-size: .14rem;
+    line-height: .16rem;
 }
 </style>

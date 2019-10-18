@@ -39,11 +39,11 @@ export default {
 
 <style scoped>
 .box {
-  padding: 0.2rem;
-  font-size: 0.32rem;
+  padding: .2rem;
+  font-size: .32rem;
 }
 .rootbox {
-  margin-top: 0.4rem;
+  margin-top: .4rem;
   width: 100%;
 }
 .rootbox > div {
@@ -51,16 +51,16 @@ export default {
   justify-content: space-around;
   width: 100%;
   height: 50%;
-  margin-top: 0.2rem;
+  margin-top: .2rem;
 }
 .rootbox > div > a {
   display: block;
   width: 46%;
-  height: 0.8rem;
+  height: .8rem;
   text-decoration: none;
   background-color: #f6f6f6;
   text-align: center;
-  line-height: 0.8rem;
+  line-height: .8rem;
   color: black;
 }
 </style>

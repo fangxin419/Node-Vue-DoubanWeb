@@ -98,18 +98,18 @@ export default {
   height: 100%;
   display: flex;
   overflow: auto;
-  margin-top: 0.08rem;
+  margin-top: .08rem;
 }
 .imgbox {
   width: 2rem;
-  margin-right: 0.2rem;
+  margin-right: .2rem;
 }
 .imgbox > img {
   width: 2rem;
   height: 3rem;
 }
 .imgbox > p {
-  font-size: 0.24rem;
+  font-size: .24rem;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -118,6 +118,6 @@ export default {
 .more {
   float: right;
   color: green;
-  font-size: 0.28rem;
+  font-size: .28rem;
 }
 </style>

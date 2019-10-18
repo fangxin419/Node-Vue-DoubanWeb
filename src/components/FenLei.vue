@@ -38,18 +38,18 @@ export default {
   color: rgb(115, 187, 115);
   float: left;
   width: 50%;
-  height: 0.6rem;
+  height: .6rem;
   border-top: 1px solid #d1cfcf;
   border-right: 1px solid #d1cfcf;
   box-sizing: border-box;
 }
 .box1 > p {
-  line-height: 0.6rem;
-  margin-left: 0.3rem;
+  line-height: .6rem;
+  margin-left: .3rem;
 }
 .findbox span:nth-child(2) {
   float: right;
-  margin-right: 0.3rem;
+  margin-right: .3rem;
   color: #d1cfcf;
 }
 </style>

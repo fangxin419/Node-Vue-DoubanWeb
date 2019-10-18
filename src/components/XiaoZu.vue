@@ -47,15 +47,15 @@ export default {
 
 <style scoped>
 .box{
-    padding: 0 0.2rem;
+    padding: 0 .2rem;
 }
 .box1{
-    margin-top: 0.2rem;
+    margin-top: .2rem;
 }
 .smallbox{
-    margin-top: 0.2rem;
+    margin-top: .2rem;
     border-bottom: 1px solid #aaabaa;
-    padding-bottom: 0.1rem;
+    padding-bottom: .1rem;
 }
 .lione{
     display: flex;
@@ -80,7 +80,7 @@ export default {
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-    margin-top: 0.1rem;
+    margin-top: .1rem;
     color:  #aaabaa;
 }
 .num{
@@ -89,7 +89,7 @@ export default {
 .more{
     text-align: center;
     text-decoration: none;
-    margin-top: 0.1rem;
+    margin-top: .1rem;
     
 }
 .more a{

@@ -28,22 +28,22 @@ export default {
 }
 .div01 img{
     
-    width: 0.8rem;
-    height: 0.8rem;
+    width: .8rem;
+    height: .8rem;
     margin-left: 1rem;
 }
 .div01>div p{
-    margin-left: 0.4rem;
+    margin-left: .4rem;
 }
 .bigziti{
-    font-size: 0.4rem;
+    font-size: .4rem;
     color: green;
 }
 .smallziti{
-    font-size: 0.28rem;
+    font-size: .28rem;
 }
 .div02{
-    margin-top: 0.4rem;
+    margin-top: .4rem;
     text-align: center;
 }
 .down{
