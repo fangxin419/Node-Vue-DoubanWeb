@@ -3,7 +3,7 @@
     <van-swipe :autoplay="3000" indicator-color="white" v-show="banner">
       <van-swipe-item v-for="(item,index) of banner" :key="index">
         <router-link :to="{name:'Detail',query:{dataName,id:item._id}}">
-          <img :src="item.image_lmobile" />
+          <img :src="server.baseUrl + item.image_lmobile" />
         </router-link>
       </van-swipe-item>
     </van-swipe>
